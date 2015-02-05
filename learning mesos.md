@@ -1,6 +1,7 @@
 # Learning Mesos
 
 ## Why Mesos?
+To allow multiple frameworks to share a single cluster.
 
 [Learning Apache Mesos]: http://radar.oreilly.com/2014/01/learning-apache-mesos.html
 [Open source datacenter computing with Apache Mesos]: http://opensource.com/business/14/9/open-source-datacenter-computing-apache-mesos
@@ -168,7 +169,7 @@ mesos-slave stop/waiting
 mesos-slave start/running, process 3123
 vagrant@vagrant-vm:~$ 
 ```
-Submit a just thru Marathon,
+Submit a job thru Marathon,
 
 ```
 vagrant@vagrant-vm:/vagrant$ curl -i -X POST -H 'Content-Type: application/json' --data-binary @app.json http://localhost:8080/v2/apps
